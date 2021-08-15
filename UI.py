@@ -26,6 +26,7 @@ button_0 = Button(root, text="0", padx=40, pady=20, command=add_button)
 button_add = Button(root, text="+", padx=40, pady=20, command=add_button)
 button_sub = Button(root, text="-", padx=40, pady=20, command=add_button)
 
+# Adding "special" buttons such as clear , mul,() etc.
 
 
 # Adding buttons to the screen
@@ -48,7 +49,7 @@ button_sub.grid(row=4, column=2)
 # Adding Text widget
 
 
-# Adding buttons functionality
+# Adding buttons functionality to each one
 
 
 
