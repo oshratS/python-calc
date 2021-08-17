@@ -17,6 +17,13 @@ def button_click(num):
     return
 
 
+def clear_button():
+    display_slot.delete(0, END)
+
+def addition_button(num):
+
+
+
 # Adding buttons widget of the app
 
 
@@ -33,7 +40,7 @@ button_0 = Button(root, text="0", padx=40, pady=20, command=lambda: button_click
 button_add = Button(root, text="+", padx=40, pady=20, command=button_click)
 button_sub = Button(root, text="-", padx=40, pady=20, command=button_click)
 button_equal = Button(root, text="=", padx=90, pady=20, command=button_click)
-button_clear = Button(root, text="Clear", padx=29, pady=20, command=button_click)
+button_clear = Button(root, text="Clear", padx=29, pady=20, command=clear_button)
 
 # Adding "special" buttons such as clear , mul,() etc.
 
