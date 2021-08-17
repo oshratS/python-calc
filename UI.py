@@ -6,15 +6,14 @@ root = Tk()
 root.wm_title("Calculator")
 display_slot = Entry(root, width=35, borderwidth=5)
 display_slot.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
+
 # Adding display_slot functionality - referring it as a string
 
 
-def button_click(num):
+def button_click(char):
     curr = display_slot.get()
     display_slot.delete(0, END)
-    #global other =num
-    display_slot.insert(0, str(curr)+str(num))
-    return
+    display_slot.insert(0, str(curr) + str(char))
 
 
 def clear_button():
@@ -22,7 +21,7 @@ def clear_button():
 
 
 def addition_button():
-    global first_num
+
     num = display_slot.get()
     global math_operation
     add_operator = '+'
@@ -41,12 +40,16 @@ def subtraction_button():
 
 # equal method will be the one that we`ll recognize and calculate the math operator
 #def equal_button():
+#    global sum
 #    match operator:
+#        case 'addition':
+#            lambda first_num,other_num: sum = first_num+other_num
+
+
 
 
 
 # Adding buttons widget of the app
-
 
 button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))
 button_2 = Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2))
